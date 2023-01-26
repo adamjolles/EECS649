@@ -5,7 +5,7 @@ def main():
     print("Hello, welcome to Adam's Mind Reading Machine.")
     while True:
         try:
-            state = str(input("Enter the start state: "))
+            state = str(input("Enter the current state: "))
             break
         except:
             print("That is not a valid option!")
@@ -22,7 +22,8 @@ def main():
         except:
             print("That is not a valid option!")
 
-    steps = 10
+    steps = 9
+    print("The last 10 flips: ")
     for i in range(steps+1): 
         print(state, end=", ")  
         r = random.random() 
