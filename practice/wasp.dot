@@ -1,0 +1,11 @@
+digraph dfa {
+    rankdir=LR;
+    node1[shape=circle label="dig a burrow"]
+    node2[shape=circle label="sting a caterpillar, drag to burrow"]
+    node3[shape=circle label="check burrow"]
+    node4[shape=doublecircle label="drag caterpillar inside, lay eggs"]
+
+    node1->node2[label="[is burrow dug?]"]
+    node2->node3[label="[is caterpillar dead and dragged?]"]
+    node3->node4[label="[is burrow good?]"]
+}
